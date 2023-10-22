@@ -1,0 +1,71 @@
+<section class="contact">
+
+    <h1 class="heading"> <span>C</span>o<span>n</span>t<span>a</span>t<span>o</span></h1>
+
+    <div class="row">
+
+        <div class="info-container">
+
+            <h1>Entrar em contato</h1>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <i class="fas fa-map"></i>
+                    <div class="info">
+                        <h3>Endereço :</h3>
+                        <p>Goiânia/GO - Brasil</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-envelope"></i>
+                    <div class="info">
+                        <h3>email :</h3>
+                        <p>david_wallison@hotmail.com</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-phone"></i>
+                    <div class="info">
+                        <h3>WhatsApp / Celular :</h3>
+                        <p>+55 62 9 9120-6654</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="share">
+                <a href="#" class="fab fa-instagram" href="https://www.instagram.com/david_youung/" target="_blank" rel="noopener noreferrer"></a>
+                <a href="#" class="fab fa-whatsapp" href="https://api.whatsapp.com/send?phone=5562991206654&text=Ol%C3%A1%2C%20gostaria%20de%20realizar%20um%20projeto%20com%20voc%C3%AA." target="_blank" rel="noopener noreferrer"></a>
+                <a href="#" class="fab fa-github" href="https://github.com/devMartinsDavid" target="_blank" rel="noopener noreferrer"></a>
+                <a href="#" class="fab fa-linkedin" href="https://www.linkedin.com/in/david-martins-lopes-226a94210/" target="_blank" rel="noopener noreferrer"></a>
+            </div>
+
+        </div>
+
+        <form #form="ngForm" (ngSubmit)="sendMail(form)" (keydown.enter)="sendMail(form)">
+
+            <div class="inputBox">
+                <input type="text" placeholder="*Seu nome" name="name" ngModel required #name="ngModel">
+                <input type="tel" placeholder="Seu número" name="telephone" ngModel #telephone="ngModel" mask="(00) 0 0000-0000">
+            </div>
+
+            <div class="inputBox">
+                <input type="email" placeholder="*Seu email" name="_replyto" ngModel required #_replyto="ngModel">
+                <input type="text" placeholder="*Assunto" name="_subject" ngModel required #_subject="ngModel">
+            </div>
+
+            <textarea name="complaint" placeholder="Mensagem" cols="30" rows="10" ngModel required #complaint="ngModel"></textarea>
+
+            <button type="submit" class="btn"> 
+                Enviar mensagem 
+                <i class="fas fa-paper-plane"></i>
+            </button>
+
+        </form>
+
+    </div>
+
+</section>

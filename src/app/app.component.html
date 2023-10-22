@@ -1,0 +1,28 @@
+<nav class="navbar">
+  <a [routerLink]="['/home']" routerLinkActive="link-active" (click)="scrollTop()"> 
+    <i class="fas fa-home"></i> 
+    <span>Home</span>
+  </a>
+  <a [routerLink]="['/sobre']" routerLinkActive="link-active" (click)="scrollTop()"> 
+    <i class="fas fa-user"></i> 
+    <span>Sobre</span>
+  </a>
+  <a [routerLink]="['/portifolio']" routerLinkActive="link-active" (click)="scrollTop()"> 
+    <i class="fas fa-briefcase"></i> 
+    <span>Portifolio</span>
+  </a>
+  <!-- <a [routerLink]="['/blogs']" routerLinkActive="link-active"> 
+    <i class="fas fa-blog"></i> 
+    <span>Blogs</span> 
+  </a> -->
+  <a [routerLink]="['/contato']" routerLinkActive="link-active" (click)="scrollTop()"> 
+    <i class="fas fa-address-book"></i> 
+    <span>Contato</span>
+  </a>
+</nav>
+
+<div [@routeLayoutAnimations]="prepareRoute(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>
+
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="pacman" [fullScreen]="true"><p style="color: white" > Aguarde... </p></ngx-spinner>
