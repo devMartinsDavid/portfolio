@@ -1,0 +1,9 @@
+.about .row .info-container .box-container .box h3 {
+    font-size: 1.7rem;
+    color: #fff;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+.email {
+    text-transform: lowercase;
+}
