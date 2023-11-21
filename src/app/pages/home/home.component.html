@@ -1,14 +1,24 @@
-<section class="home">
 
+<section class="home">
+    <div class="greeting">
+        <h2> {{ greetingMessege }} </h2>
+    </div>
+    
     <div class="image">
         <img src="assets/images/user4.jpg" alt="LOGO">
     </div>
+    
 
     <div class="content">
-        <h3> {{ textToType }} </h3>
-        <span> {{ textToTypeSubtitle }} </span>
+        <div class="container-geral-palavras">
+            <h3 id="container-palavras"> <span class="palavra-1"> Olá,</span><span class="palavra-2">sou</span><span class="palavra-3">o David Martins</span> </h3>
+        </div>
+        <div class="subtitle-geral">
+            <span class="subtitle"> Desenvolvedor Web Full-Stack Júnior </span>
+        </div>
+
         <p style="text-transform: none;">Como alguém apaixonado por programação, empenho-me com dedicação aos meus projetos, encontrando prazer e satisfação na minha jornada como programador. Estou constantemente empenhado em aprimorar minhas habilidades e buscar crescimento profissional contínuo.</p>
-        <a class="btn" [routerLink]="['/sobre']"> 
+        <a class="btn" [routerLink]="['/sobre']">
             Sobre eu
             <i class="fas fa-user"></i>
         </a>

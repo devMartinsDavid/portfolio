@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { slideInLayoutAnimation } from './animations';
@@ -9,7 +10,7 @@ import { ControllerBase } from './controller/controller.base';
   animations: [ slideInLayoutAnimation ]
 })
 export class AppComponent extends ControllerBase {
-
+  title: string = 'DevMartins';
   constructor() {
     super();
   }
@@ -17,10 +18,10 @@ export class AppComponent extends ControllerBase {
   ngOnInit() {}
   
   prepareRoute(outlet: RouterOutlet) {
-    return outlet.activatedRouteData.animation;
+    return outlet.activatedRouteData!.animation;
   }
 
   scrollTop(){
-    window.scrollTo(0, 0);
+    window.scrollTo(0,0);
   }
 }

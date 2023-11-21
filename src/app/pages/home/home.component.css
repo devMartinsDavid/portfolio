@@ -1,5 +1,70 @@
-p {
-    font-size: 18px;
-    font-family: Arial, sans-serif;
-    color: #ffffff;
+p{
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}
+.greeting{
+  position: absolute;
+  top: 0;
+  margin-top: 5px;
+  color: aliceblue;
+}
+
+#container-palavras{
+  display: flex;
+}
+.container-geral-palavras{
+  display: flex;
+  justify-content: center;
+}
+.container-geral-palavras #container-palavras > span{
+  margin-left: 5px;
+  color: white;
+}
+.subtitle-geral{
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(1000%);
   }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideFromTop {
+  from {
+    transform: translateY(-9000%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-1000%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes afterTitle {
+  from {
+    transform: translateX(-1000%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.container-geral-palavras #container-palavras .palavra-1,
+.container-geral-palavras #container-palavras .palavra-2,
+.container-geral-palavras #container-palavras .palavra-3 {
+  opacity: 0;
+}
+
+.subtitle-geral .subtitle {
+  opacity: 0;
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
 import { ControllerBase } from '@app/controller/controller.base';
@@ -11,38 +11,43 @@ import { NgxSpinnerService } from 'ngx-spinner';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
-export class ContactComponent extends ControllerBase {
+export class ContactComponent extends ControllerBase implements OnInit {
   
-  loading: Boolean = false;
+  loading: boolean = false;
 
   constructor(
-    private title: Title,
-    private service: AppService,
-    private message: MessageService,
+    private titleService: Title,
+    private appService: AppService,
+    private messageService: MessageService,
     private spinner: NgxSpinnerService
   ) { 
     super();
   }
 
   ngOnInit(): void {
-    this.title.setTitle('DevMartins | Contato');
+    this.setTitle('DevMartins | Contato');
   }
 
-  sendMail(form: NgForm): any{
+  setTitle(newTitle: string): void {
+    this.titleService.setTitle(newTitle);
+  }
+
+  sendMail(form: NgForm): void {
     if (!form.valid) {
-      this.message.toastWarning('Preencha os campos obrigatórios!')
-      return false;
+      this.messageService.toastWarning('Preencha os campos obrigatórios!');
+      return;
     }
 
     this.spinner.show();
-    this.service.sendMail(form.value).then((res) => {
-      form.reset();
-      this.spinner.hide();
-      this.message.toastSuccess('Email enviado com sucesso!', 'Muito Obrigado!');
-    }, (err) => {
-      this.spinner.hide();
-      this.message.toastError('Por favor, tente novamente mais tarde!', 'Falha no envio!')
-    })
+    this.appService.sendMail(form.value)
+      .then((res) => {
+        form.reset();
+        this.spinner.hide();
+        this.messageService.toastSuccess('Email enviado com sucesso!', 'Muito Obrigado!');
+      })
+      .catch((err) => {
+        this.spinner.hide();
+        this.messageService.toastError('Por favor, tente novamente mais tarde!', 'Falha no envio!');
+      });
   }
-
 }

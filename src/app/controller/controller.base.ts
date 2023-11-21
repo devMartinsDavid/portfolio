@@ -29,28 +29,17 @@ export class ControllerBase implements OnInit, AfterContentInit, AfterViewInit, 
         return parts[parts.length -1];
     }
 
-    getMessage(): string{
-        
-        let d = new Date();
-        let hour = d.getHours();
-        
-        if(hour < 5) {
-            return "Uma Ótima Madrugada!";
-        }
-        
-        if(hour < 8) {
-            return "Um Ótimo Dia!";
-        }
-    
-        
-        if(hour < 12) {
-            return "Um Ótimo Dia!";
-        }
-    
-        if(hour < 18) {
-            return "Uma Ótima Tarde!";
+    getMessage(): string {
+        const hour: number = new Date().getHours();
+      
+        if (hour < 5) {
+          return "Uma Ótima Madrugada!";
+        } else if (hour < 12) {
+          return "Um Ótimo Dia!";
+        } else if (hour < 18) {
+          return "Uma Ótima Tarde!";
         } else {
-            return "Uma Ótima Noite!";
+          return "Uma Ótima Noite!";
         }
     }
 

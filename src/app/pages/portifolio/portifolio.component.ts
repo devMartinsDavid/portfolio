@@ -8,12 +8,10 @@ import { Title } from '@angular/platform-browser';
 })
 export class PortifolioComponent implements OnInit {
 
-  constructor(
-    private title: Title
-  ) { }
+  constructor(private title: Title) { }
 
   ngOnInit(): void {
     this.title.setTitle('DevMartins | Portifolio');
   }
-
+  
 }

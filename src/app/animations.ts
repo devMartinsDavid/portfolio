@@ -1,4 +1,5 @@
 import { animate, animateChild, group, query, style, transition, trigger } from "@angular/animations";
+import { Component, HostBinding } from "@angular/core";
 
 export const enterAnimationIcon =
     trigger('enterAnimationIcon', [
