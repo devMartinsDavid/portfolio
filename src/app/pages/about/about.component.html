@@ -12,7 +12,7 @@
 
                 <div class="box">
                     <h3> <span>Nome : </span> David Martins </h3>
-                    <h3> <span>Idade : </span> {{ yearBirth }} </h3>
+                    <h3> <span>Idade : </span> {{  getFormattedAge('birthday')  }} </h3>
                     <h3 class="email"> <span>Email : </span> david_wallison@hotmail.com </h3>
                     <h3> <span>Endereço : </span> Goiânia/GO, Brasil </h3>
                 </div>
@@ -20,7 +20,7 @@
                 <div class="box">
                     <h3> <span>Freelance/CLT : </span> Disponível </h3>
                     <h3> <span>Skill : </span> front-end & back-end </h3>
-                    <h3> <span>Experiência : </span> {{ yearsProgramation }} ano </h3>
+                    <h3> <span>Experiência : </span> {{ getFormattedAge('yearsProgramation') }} </h3>
                     <h3> <span>Linguagem : </span> Português, Inglês </h3>
                 </div>
 
@@ -75,8 +75,8 @@
             <h3>jquery</h3>
         </div>
         <div class="box">
-            <img src="assets/images/icon-ionic.svg">
-            <h3>Ionic</h3>
+            <img src="assets/images/icon-8.png">
+            <h3>Laravel</h3>
         </div>
         <div class="box">
             <img src="assets/images/icon-angular.png">
@@ -89,6 +89,10 @@
         <div class="box">
             <img src="assets/images/icon-nodejs.png">
             <h3>NodeJs</h3>
+        </div>
+        <div class="box">
+            <img src="assets/images/mysql.png">
+            <h3>MySQL</h3>
         </div>
     </div>
 
