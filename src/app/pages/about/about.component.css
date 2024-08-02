@@ -6,4 +6,8 @@
 }
 .email {
     text-transform: lowercase;
+} 
+
+.box p {
+    transform: none !important;
 }

@@ -10,17 +10,21 @@ p{
   color: aliceblue;
 }
 
-#container-palavras{
-  display: flex;
-}
 .container-geral-palavras{
+  display: block;
+  text-align: center;
+}
+
+#container-palavras{
   display: flex;
   justify-content: center;
 }
+
 .container-geral-palavras #container-palavras > span{
   margin-left: 5px;
   color: white;
 }
+
 .subtitle-geral{
   display: flex;
   justify-content: center;

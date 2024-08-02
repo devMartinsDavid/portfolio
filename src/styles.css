@@ -9,7 +9,6 @@
   text-decoration: none;
   outline: none;
   border: none;
-  text-transform: capitalize;
 }
 
 html {
@@ -196,7 +195,7 @@ section {
 .about .row .info-container h1 {
   font-size: 3rem;
   color: #fff;
-  text-transform: uppercase;
+  /* text-transform: uppercase;  */
   padding-bottom: 1rem;
 }
 
@@ -295,7 +294,7 @@ section {
   color: #fff;
   font-size: 1.7rem;
   font-weight: normal;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .education .box-container {
@@ -424,7 +423,7 @@ section {
 .portfolio .box-container .box .content h3 {
   font-size: 2.5rem;
   color: #fff;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: normal;
 }
 
@@ -463,7 +462,6 @@ section {
 
 .contact .row .info-container h1 {
   font-size: 3rem;
-  text-transform: uppercase;
   color: #fff;
   padding-bottom: 1rem;
 }

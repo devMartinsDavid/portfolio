@@ -24,13 +24,9 @@ export class ContactComponent extends ControllerBase implements OnInit {
     super();
   }
 
-  ngOnInit(): void {
-    this.setTitle('DevMartins | Contato');
-  }
+  ngOnInit(): void { this.setTitle('DevMartins | Contato'); }
 
-  setTitle(newTitle: string): void {
-    this.titleService.setTitle(newTitle);
-  }
+  setTitle(newTitle: string): void { this.titleService.setTitle(newTitle); }
 
   sendMail(form: NgForm): void {
     if (!form.valid) {

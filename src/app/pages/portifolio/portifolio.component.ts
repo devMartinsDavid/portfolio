@@ -10,8 +10,6 @@ export class PortifolioComponent implements OnInit {
 
   constructor(private title: Title) { }
 
-  ngOnInit(): void {
-    this.title.setTitle('DevMartins | Portifolio');
-  }
+  ngOnInit(): void { this.title.setTitle('DevMartins | Portifolio'); }
   
 }

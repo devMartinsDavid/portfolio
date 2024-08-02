@@ -20,13 +20,9 @@ export class HomeComponent implements OnInit, AfterViewInit, AfterContentChecked
     this.playAnimations();
   }
 
-  ngAfterViewInit(): void {
-    this.playAnimations();
-  }
+  ngAfterViewInit(): void { this.playAnimations(); }
 
-  ngAfterContentChecked(): void {
-    this.saudations();
-  }
+  ngAfterContentChecked(): void { this.saudations(); }
 
   private playAnimations(): void {
     if (!this.animationPlayed) {
