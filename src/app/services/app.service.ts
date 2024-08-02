@@ -6,7 +6,7 @@ import { HttpClient } from "@angular/common/http";
 })
 export class AppService {
 
-  baseUrl: any= 'https://formspree.io/f/mqkvjddp';
+  baseUrl: any= 'https://formspree.io/f/myzgwnrn';
 
   constructor( private http: HttpClient ) { }
 
