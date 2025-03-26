@@ -3,7 +3,7 @@ import { CUSTOM_ELEMENTS_SCHEMA, LOCALE_ID, NgModule, NO_ERRORS_SCHEMA } from '@
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 
 // Locale PT-BR
@@ -26,33 +26,27 @@ import { NgxSpinnerModule } from "ngx-spinner";
 const maskConfig: Partial<IConfig> = {};
 const toastrConfig = {timeOut: 1000,positionClass: 'toast-top-right', preventDuplicates: true }
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    PortifolioComponent,
-    AboutComponent,
-    ContactComponent,
-    HomeComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    RouterModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    NgxSpinnerModule,
-    ToastrModule.forRoot(toastrConfig),
-    NgxMaskModule.forRoot(),
-  ],
-  providers: [
-    { provide: LOCALE_ID, useValue: 'pt-BR' },
-    { provide: LocationStrategy, useClass: HashLocationStrategy }
-  ],
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA,
-    NO_ERRORS_SCHEMA
-  ],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        PortifolioComponent,
+        AboutComponent,
+        ContactComponent,
+        HomeComponent
+    ],
+    schemas: [
+        CUSTOM_ELEMENTS_SCHEMA,
+        NO_ERRORS_SCHEMA
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        RouterModule,
+        BrowserAnimationsModule,
+        NgxSpinnerModule,
+        ToastrModule.forRoot(toastrConfig),
+        NgxMaskModule.forRoot()], providers: [
+        { provide: LOCALE_ID, useValue: 'pt-BR' },
+        { provide: LocationStrategy, useClass: HashLocationStrategy },
+        provideHttpClient(withInterceptorsFromDi())
+    ] })
 export class AppModule { }
