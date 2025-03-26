@@ -43,3 +43,12 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Angular
+.angular/
+dist/
+node_modules/
+*.log
+*.tmp
+.angular/cache/
+.sass-cache/
