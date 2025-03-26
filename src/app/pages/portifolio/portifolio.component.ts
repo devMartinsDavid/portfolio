@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-portifolio',
-  templateUrl: './portifolio.component.html',
-  styleUrls: ['./portifolio.component.css']
+    selector: 'app-portifolio',
+    templateUrl: './portifolio.component.html',
+    styleUrls: ['./portifolio.component.css'],
+    standalone: false
 })
 export class PortifolioComponent implements OnInit {
 

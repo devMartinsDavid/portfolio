@@ -3,9 +3,10 @@ import { Title } from '@angular/platform-browser';
 import { ControllerBase } from '@app/controller/controller.base';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.css'],
+    standalone: false
 })
 export class HomeComponent implements OnInit, AfterViewInit, AfterContentChecked {
   //controle de animação
