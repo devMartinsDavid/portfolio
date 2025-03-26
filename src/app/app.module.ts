@@ -1,28 +1,24 @@
-import { BrowserAnimationsModule, provideAnimations } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
 import { CUSTOM_ELEMENTS_SCHEMA, LOCALE_ID, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
-import { RouterModule, provideRouter } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { provideClientHydration } from '@angular/platform-browser';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
-
-// Locale PT-BR
 import localePtBR from '@angular/common/locales/pt';
 import { HashLocationStrategy, LocationStrategy, registerLocaleData } from '@angular/common';
-registerLocaleData(localePtBR);
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-import { NgxMaskModule, IConfig } from 'ngx-mask';
+import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
+import { ToastrModule, provideToastr } from 'ngx-toastr';
+import { NgxSpinnerModule } from "ngx-spinner";
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
-
-import { ToastrModule, provideToastr } from 'ngx-toastr';
 import { PortifolioComponent } from './pages/portifolio/portifolio.component';
-import { NgxSpinnerModule, provideNgxSpinner } from "ngx-spinner";
 
-const maskConfig: Partial<IConfig> = {};
+registerLocaleData(localePtBR);
+
+const maskConfig = {};
 const toastrConfig = { timeOut: 1000, positionClass: 'toast-top-right', preventDuplicates: true };
 
 @NgModule({
@@ -38,23 +34,21 @@ const toastrConfig = { timeOut: 1000, positionClass: 'toast-top-right', preventD
     NO_ERRORS_SCHEMA
   ],
   imports: [
+    BrowserModule,
     AppRoutingModule,
     FormsModule,
     RouterModule,
     BrowserAnimationsModule,
     NgxSpinnerModule,
     ToastrModule.forRoot(toastrConfig),
-    NgxMaskModule.forRoot(maskConfig)
+    NgxMaskDirective,
+    provideNgxMask(maskConfig)
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt-BR' },
     { provide: LocationStrategy, useClass: HashLocationStrategy },
     provideHttpClient(withInterceptorsFromDi()),
-    provideClientHydration(),
-    // Alternativa moderna para as configurações:
-    // provideAnimations(),
-    // provideToastr(toastrConfig),
-    // provideNgxSpinner()
+    provideToastr(toastrConfig),
   ],
   bootstrap: [AppComponent]
 })
