@@ -4,7 +4,6 @@ import { PortifolioComponent } from './portifolio.component';
 
 const routes: Routes = [
   { path: '', component: PortifolioComponent, data: { animation: 'PortifolioPage' } }
-  // Adicione outras rotas específicas do Portfolio aqui
 ];
 
 @NgModule({

@@ -7,7 +7,6 @@ const routes: Routes = [
   { path: 'about', loadChildren: () => import('./pages/about/about.module').then(m => m.AboutModule) },
   { path: 'contact', loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule) },
   { path: 'portfolio', loadChildren: () => import('./pages/portifolio/portifolio.module').then(m => m.PortifolioModule) },
-  // Outras rotas conforme necessário
 ];
 
 @NgModule({

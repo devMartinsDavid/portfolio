@@ -4,7 +4,6 @@ import { ContactComponent } from './contact.component';
 
 const routes: Routes = [
   { path: '', component: ContactComponent, data: { animation: 'ContactPage' } }
-  // Adicione outras rotas específicas do Home aqui
 ];
 
 @NgModule({

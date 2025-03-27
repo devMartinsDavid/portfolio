@@ -4,7 +4,6 @@ import { AboutComponent } from './about.component';
 
 const routes: Routes = [
   { path: '', component: AboutComponent, data: { animation: 'AboutPage' } }
-  // Adicione outras rotas específicas do Home aqui
 ];
 
 @NgModule({
