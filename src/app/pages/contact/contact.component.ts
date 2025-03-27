@@ -13,7 +13,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
     standalone: false
 })
 export class ContactComponent extends ControllerBase implements OnInit {
-  
+
   loading: boolean = false;
 
   constructor(
@@ -21,7 +21,7 @@ export class ContactComponent extends ControllerBase implements OnInit {
     private appService: AppService,
     private messageService: MessageService,
     private spinner: NgxSpinnerService
-  ) { 
+  ) {
     super();
   }
 
