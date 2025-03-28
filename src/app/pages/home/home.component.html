@@ -1,28 +1,29 @@
-
 <section class="home">
-    <div class="greeting">
-        <h2> {{ greetingMessege }} </h2>
-    </div>
-    
-    <div class="image">
-        <img src="assets/images/user4.jpg" alt="LOGO">
-    </div>
-    
+  <div class="greeting">
+    <h2 aria-live="polite">{{ greetingMessage }}</h2>
+  </div>
 
-    <div class="content">
-        <div class="container-geral-palavras">
-            <h3 id="container-palavras"> <span class="palavra-1"> Olá,</span><span class="palavra-2">sou</span><span class="palavra-3">o David!</span> </h3>
-            <div class="subtitle-geral">
-                <span class="subtitle"> Desenvolvedor Web Full-Stack Júnior </span>
-            </div>
-        </div>
+  <div class="image">
+    <img src="assets/images/user4.jpg" alt="My profile photo">
+  </div>
 
-
-        <p style="text-transform: none;">Como alguém apaixonado por programação, empenho-me com dedicação aos meus projetos, encontrando prazer e satisfação na minha jornada como programador. Estou constantemente empenhado em aprimorar minhas habilidades e buscar crescimento profissional contínuo.</p>
-        <a class="btn" [routerLink]="['/sobre']">
-            SOBRE MIM
-            <i class="fas fa-user"></i>
-        </a>
+  <div class="content">
+    <div class="container-geral-palavras">
+      <h3 id="container-palavras">
+        <span class="palavra-1" [ngClass]="{ 'slide-animation-right': animationPlayed }"> Olá, </span>
+        <span class="palavra-2" [ngClass]="{ 'slide-animation-top': animationPlayed }"> sou </span>
+        <span class="palavra-3" [ngClass]="{ 'slide-animation-left': animationPlayed }"> o David! </span>
+      </h3>
+      <div class="subtitle-geral">
+        <span class="subtitle palavra-4" [ngClass]="{ 'slide-animation-left': animationPlayed }"> Desenvolvedor Web </span>
+      </div>
     </div>
 
+    <p>Como alguém apaixonado por programação, empenho-me com dedicação aos meus projetos, encontrando prazer e satisfação na minha jornada como programador. Estou constantemente empenhado em aprimorar minhas habilidades e buscar crescimento profissional contínuo.</p>
+
+    <a class="btn" [routerLink]="['/about']">
+      SOBRE MIM
+      <i class="fas fa-user"></i>
+    </a>
+  </div>
 </section>

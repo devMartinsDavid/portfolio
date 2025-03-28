@@ -1,8 +1,56 @@
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 4rem;
+  min-height: calc(100vh - 6.5rem);
+}
+
+.home .image {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 42rem;
+  flex: 1 1 42rem;
+  text-align: center;
+}
+.home .image img {
+  height: 50rem;
+  width: 50rem;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+.home .content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 42rem;
+  flex: 1 1 42rem;
+}
+.home .content h3 {
+  color: #fff;
+  font-size: 4rem;
+  padding-bottom: .5rem;
+}
+.home .content span {
+  font-size: 3rem;
+  color: #39FF14;
+  padding: .5rem 0;
+  display: block;
+}
+.home .content p {
+  font-size: 1.5rem;
+  color: #aaa;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
 p{
   font-size: 18px;
   font-family: Arial, sans-serif;
   color: #ffffff;
 }
+
 .greeting{
   position: absolute;
   top: 0;
@@ -10,65 +58,79 @@ p{
   color: aliceblue;
 }
 
+/* animations class */
 .container-geral-palavras{
-  display: block;
   text-align: center;
 }
-
 #container-palavras{
   display: flex;
   justify-content: center;
 }
-
 .container-geral-palavras #container-palavras > span{
   margin-left: 5px;
   color: white;
 }
-
 .subtitle-geral{
   display: flex;
   justify-content: center;
 }
 
+/* animations */
 @keyframes slideFromRight {
   from {
     transform: translateX(1000%);
+    opacity: 0;
   }
   to {
     transform: translateX(0);
+    opacity: 1;
   }
 }
+
 @keyframes slideFromTop {
   from {
-    transform: translateY(-9000%);
+    transform: translateY(-1000%);
+    opacity: 0;
   }
   to {
     transform: translateY(0);
+    opacity: 1;
   }
 }
+
 @keyframes slideFromLeft {
   from {
     transform: translateX(-1000%);
+    opacity: 0;
   }
   to {
     transform: translateX(0);
+    opacity: 1;
   }
 }
-@keyframes afterTitle {
+
+@keyframes fadeIn {
   from {
-    transform: translateX(-1000%);
+    opacity: 0;
   }
   to {
-    transform: translateX(0);
+    opacity: 1;
   }
 }
 
-.container-geral-palavras #container-palavras .palavra-1,
-.container-geral-palavras #container-palavras .palavra-2,
-.container-geral-palavras #container-palavras .palavra-3 {
-  opacity: 0;
+/* Classes usadas no [ngClass] */
+.slide-animation-right {
+  animation: slideFromRight 1.5s ease forwards;
 }
 
-.subtitle-geral .subtitle {
-  opacity: 0;
+.slide-animation-top {
+  animation: slideFromTop 1.5s ease forwards;
+}
+
+.slide-animation-left {
+  animation: slideFromLeft 1.5s ease forwards;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease forwards;
 }

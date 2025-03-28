@@ -1,0 +1,87 @@
+.portfolio {
+  text-align: center;
+}
+
+.portfolio .text p {
+  font-size: 1.5rem !important;
+  color: #aaa !important;
+  padding: 1rem 0 !important;
+  line-height: 2 !important;
+}
+
+.portfolio .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.portfolio .box-container .box {
+  height: 30rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolio .box-container .box:hover .content {
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+.portfolio .box-container .box img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.portfolio .box-container .box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #1a1a1a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 2rem;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.portfolio .box-container .box .content h3 {
+  font-size: 2.5rem;
+  color: #fff;
+  /* text-transform: uppercase; */
+  font-weight: normal;
+}
+
+.portfolio .box-container .box .content p {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #aaa;
+}
+
+.portfolio .box-container .box .content a {
+  font-size: 2rem;
+  color: #39FF14;
+}
+
+.portfolio .box-container .box .content a:hover {
+  color: #fff;
+}
