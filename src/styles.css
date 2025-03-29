@@ -31,7 +31,7 @@ html::-webkit-scrollbar-track {
   background: #0d0d0d;
 }
 html::-webkit-scrollbar-thumb {
-  background: #39FF14;
+  background: #449eaf;
   border-radius: 5rem;
 }
 
@@ -57,7 +57,7 @@ html::-webkit-scrollbar-thumb {
 }
 .heading span {
   text-transform: uppercase;
-  color: #39FF14;
+  color: #449eaf;
 }
 
 /* btns */
@@ -65,7 +65,7 @@ html::-webkit-scrollbar-thumb {
   display: inline-block;
   margin-top: 1rem;
   border-radius: 5rem;
-  background: #2c9b17;
+  background: #449eaf;
   padding: .7rem;
   font-size: 1.7rem;
   color: #fff;
@@ -78,7 +78,7 @@ html::-webkit-scrollbar-thumb {
   font-size: 1.7rem;
   text-align: center;
   background: #fff;
-  color: #2c9b17;
+  color: #449eaf;
   border-radius: 50%;
   margin-left: 1rem;
   -webkit-transition: .2s linear;

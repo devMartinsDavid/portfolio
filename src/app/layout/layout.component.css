@@ -23,7 +23,7 @@
 }
 
 .navbar a:hover {
-  background: #39FF14;
+  background: #449eaf;
   color: #000;
   border-radius: 5rem;
 }
@@ -35,7 +35,7 @@
 .navbar a i {
   font-size: 2rem;
   margin-bottom: 0.5rem;
-  color: #39FF14;
+  color: #449eaf;
   transition: color 0.3s ease;
 }
 
