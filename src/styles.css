@@ -16,7 +16,6 @@ body {
   background: #0d0d0d;
   padding-bottom: 6.5rem;
   position: relative;
-  min-height: 100vh;
 }
 html {
   font-size: 62.5%;

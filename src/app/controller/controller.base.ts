@@ -33,13 +33,13 @@ export class ControllerBase implements OnInit, AfterContentInit, AfterViewInit, 
         const hour: number = new Date().getHours();
 
         if (hour < 5) {
-          return "Uma Ótima Madrugada!";
+          return "A Great Early Morning!";
         } else if (hour < 12) {
-          return "Um Ótimo Dia!";
+          return "A Wonderful Morning!";
         } else if (hour < 18) {
-          return "Uma Ótima Tarde!";
+          return "A Pleasant Afternoon!";
         } else {
-          return "Uma Ótima Noite!";
+          return "A Lovely Evening!";
         }
     }
 

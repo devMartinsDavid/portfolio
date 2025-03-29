@@ -9,12 +9,13 @@
   flex-wrap: wrap;
   gap: 4rem;
   min-height: calc(100vh - 6.5rem);
+  overflow-x: hidden;
 }
 
 .home .image {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 42rem;
-  flex: 1 1 42rem;
+  flex: 1 1 100%;
   text-align: center;
 }
 .home .image img {
@@ -133,4 +134,16 @@ p{
 
 .fade-in {
   animation: fadeIn 3s ease forwards;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .home .image img {
+    height: 40rem; /* Tamanho menor no mobile */
+    width: 40rem;  /* Tamanho menor no mobile */
+  }
 }
