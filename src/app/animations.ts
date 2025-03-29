@@ -9,14 +9,14 @@ export const enterAnimationIcon = trigger('enterAnimationIcon', [
 
 export const slideInLayoutAnimation = trigger('routeLayoutAnimations', [
   transition('* <=> *', [
-    style({ position: 'relative' }),
+    style({ position: 'relative', opacity: 0 }),
     query(':enter, :leave', [
       style({
-        position: 'fixed', // Mantém a página visível sem alterar o fluxo do DOM
+        position: 'fixed',
         top: 0,
         left: 0,
         width: '100%',
-        minHeight: '100vh', // Garante que a página menor tenha altura suficiente
+        minHeight: '100vh',
         opacity: 0,
       })
     ], { optional: true }),
@@ -28,7 +28,7 @@ export const slideInLayoutAnimation = trigger('routeLayoutAnimations', [
 
 export const slideInAppAnimation = trigger('routeAnimations', [
   transition('SigninPage => LayoutPage', [
-    style({ position: 'relative', overflow: 'hidden' }),
+    style({ position: 'relative', overflow: 'hidden', opacity: 0 }),
     query(':enter, :leave', [
       style({
         position: 'fixed',
@@ -36,24 +36,25 @@ export const slideInAppAnimation = trigger('routeAnimations', [
         left: 0,
         width: '100%',
         minHeight: '100vh',
+        opacity: 0,
       }),
     ], { optional: true }),
     query(':enter', [
-      style({ left: '-100%' }),
+      style({ left: '-100%', opacity: 0 }),
     ], { optional: true }),
     query(':leave', animateChild(), { optional: true }),
     group([
       query(':leave', [
-        animate('200ms ease-out', style({ left: '100%' }))
+        animate('200ms ease-out', style({ left: '100%', opacity: 0 }))
       ], { optional: true }),
       query(':enter', [
-        animate('300ms ease-out', style({ left: '0%' }))
+        animate('300ms ease-out', style({ left: '0%', opacity: 1 }))
       ], { optional: true }),
     ]),
     query(':enter', animateChild(), { optional: true }),
   ]),
   transition('LayoutPage => SigninPage', [
-    style({ position: 'relative', overflow: 'hidden' }),
+    style({ position: 'relative', overflow: 'hidden', opacity: 0 }),
     query(':enter, :leave', [
       style({
         position: 'fixed',
@@ -61,24 +62,25 @@ export const slideInAppAnimation = trigger('routeAnimations', [
         right: 0,
         width: '100%',
         minHeight: '100vh',
+        opacity: 0,
       }),
     ], { optional: true }),
     query(':enter', [
-      style({ right: '-100%' }),
+      style({ right: '-100%', opacity: 0 }),
     ], { optional: true }),
     query(':leave', animateChild(), { optional: true }),
     group([
       query(':leave', [
-        animate('200ms ease-out', style({ right: '100%' }))
+        animate('200ms ease-out', style({ right: '100%', opacity: 0 }))
       ], { optional: true }),
       query(':enter', [
-        animate('300ms ease-out', style({ right: '0%' }))
+        animate('300ms ease-out', style({ right: '0%', opacity: 1 }))
       ], { optional: true }),
     ]),
     query(':enter', animateChild(), { optional: true }),
   ]),
   transition('* <=> NotFoundPage', [
-    style({ position: 'relative', overflow: 'hidden' }),
+    style({ position: 'relative', overflow: 'hidden', opacity: 0 }),
     query(':enter, :leave', [
       style({
         position: 'fixed',
@@ -86,6 +88,7 @@ export const slideInAppAnimation = trigger('routeAnimations', [
         left: 0,
         width: '100%',
         minHeight: '100vh',
+        opacity: 0,
       }),
     ], { optional: true }),
     query(':enter', [
