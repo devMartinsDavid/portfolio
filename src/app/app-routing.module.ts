@@ -1,25 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './pages/about/about.component';
-import { ContactComponent } from './pages/contact/contact.component';
-import { HomeComponent } from './pages/home/home.component';
-import { PortifolioComponent } from './pages/portifolio/portifolio.component';
 
 const routes: Routes = [
-  {path: '', pathMatch: 'full', redirectTo: 'home'},
-
-  {path: 'home', component: HomeComponent, data: { animation: 'HomePage' }},
-  
-  {path: 'sobre', component: AboutComponent, data: { animation: 'AboutPage' }},
-    
-  {path: 'contato', component: ContactComponent, data: { animation: 'ContactPage' }},
-  
-  {path: 'portifolio', component: PortifolioComponent, data: { animation: 'PortifolioPage' }},
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
+  { path: 'home', loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule) },
+  { path: 'about', loadChildren: () => import('./pages/about/about.module').then(m => m.AboutModule) },
+  { path: 'contact', loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule) },
+  { path: 'portfolio', loadChildren: () => import('./pages/portifolio/portifolio.module').then(m => m.PortifolioModule) },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
-
 })
 export class AppRoutingModule { }

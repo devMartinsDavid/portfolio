@@ -1,0 +1,31 @@
+<!-- layout.component.html -->
+<header>
+  <nav class="navbar">
+    <a [routerLink]="['/home']" routerLinkActive="link-active" [routerLinkActiveOptions]="{exact: true}" >
+      <i class="fas fa-home"></i>
+      <span>Home</span>
+    </a>
+    <a [routerLink]="['/about']" routerLinkActive="link-active" [routerLinkActiveOptions]="{exact: true}" >
+      <i class="fas fa-user"></i>
+      <span>About</span>
+    </a>
+    <a [routerLink]="['/portfolio']" routerLinkActive="link-active" [routerLinkActiveOptions]="{exact: true}" >
+      <i class="fas fa-briefcase"></i>
+      <span>Portfolio</span>
+    </a>
+    <a [routerLink]="['/contact']" routerLinkActive="link-active" [routerLinkActiveOptions]="{exact: true}" >
+      <i class="fas fa-address-book"></i>
+      <span>Contact</span>
+    </a>
+  </nav>
+</header>
+
+<main [@routeLayoutAnimations]="prepareRoute(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
+</main>
+
+<footer>
+  <ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="pacman" [fullScreen]="true">
+    <p style="color: white"> Wait... </p>
+  </ngx-spinner>
+</footer>

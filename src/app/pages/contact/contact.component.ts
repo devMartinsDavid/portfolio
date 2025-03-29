@@ -7,12 +7,13 @@ import { MessageService } from '@app/services/message.service';
 import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+    selector: 'app-contact',
+    templateUrl: './contact.component.html',
+    styleUrls: ['./contact.component.css'],
+    standalone: false
 })
 export class ContactComponent extends ControllerBase implements OnInit {
-  
+
   loading: boolean = false;
 
   constructor(
@@ -20,7 +21,7 @@ export class ContactComponent extends ControllerBase implements OnInit {
     private appService: AppService,
     private messageService: MessageService,
     private spinner: NgxSpinnerService
-  ) { 
+  ) {
     super();
   }
 

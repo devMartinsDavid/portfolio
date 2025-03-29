@@ -1,28 +1,29 @@
-
 <section class="home">
-    <div class="greeting">
-        <h2> {{ greetingMessege }} </h2>
-    </div>
-    
-    <div class="image">
-        <img src="assets/images/user4.jpg" alt="LOGO">
-    </div>
-    
+  <div class="greeting">
+    <h2 aria-live="polite">{{ greetingMessage }}</h2>
+  </div>
 
-    <div class="content">
-        <div class="container-geral-palavras">
-            <h3 id="container-palavras"> <span class="palavra-1"> Olá,</span><span class="palavra-2">sou</span><span class="palavra-3">o David!</span> </h3>
-            <div class="subtitle-geral">
-                <span class="subtitle"> Desenvolvedor Web Full-Stack Júnior </span>
-            </div>
-        </div>
+  <div class="image">
+    <img src="assets/images/user4.jpg" alt="My profile photo">
+  </div>
 
-
-        <p style="text-transform: none;">Como alguém apaixonado por programação, empenho-me com dedicação aos meus projetos, encontrando prazer e satisfação na minha jornada como programador. Estou constantemente empenhado em aprimorar minhas habilidades e buscar crescimento profissional contínuo.</p>
-        <a class="btn" [routerLink]="['/sobre']">
-            SOBRE MIM
-            <i class="fas fa-user"></i>
-        </a>
+  <div class="content">
+    <div class="main-words-container">
+      <h3 id="words-container">
+        <span class="word-1" [ngClass]="{ 'slide-animation-right': animationPlayed }"> Hello, </span>
+        <span class="word-2" [ngClass]="{ 'slide-animation-top': animationPlayed }"> I am </span>
+        <span class="word-3" [ngClass]="{ 'slide-animation-left': animationPlayed }"> David! </span>
+      </h3>
+      <div class="main-subheading">
+        <span class="subheading word-4" [ngClass]="{ 'slide-animation-left': animationPlayed }"> Web Developer </span>
+      </div>
     </div>
 
+    <p>As someone passionate about programming, I dedicate myself to my projects with enthusiasm, finding joy and satisfaction in my journey as a programmer. I am always working to improve my skills and pursue continuous professional growth.</p>
+
+    <a class="btn center" [routerLink]="['/about']">
+      ABOUT ME
+      <i class="fas fa-user"></i>
+    </a>
+  </div>
 </section>

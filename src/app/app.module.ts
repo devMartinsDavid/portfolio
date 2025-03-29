@@ -1,57 +1,58 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CUSTOM_ELEMENTS_SCHEMA, LOCALE_ID, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
 
-
-// Locale PT-BR
-import localePtBR from '@angular/common/locales/pt';
-import { HashLocationStrategy, LocationStrategy, registerLocaleData } from '@angular/common';
-registerLocaleData(localePtBR);
-
+//main
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LayoutModule } from './layout/layout.module';
 
-import { AboutComponent } from './pages/about/about.component';
-import { ContactComponent } from './pages/contact/contact.component';
-import { HomeComponent } from './pages/home/home.component';
+//libs
+import { CUSTOM_ELEMENTS_SCHEMA, LOCALE_ID, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import localePtBR from '@angular/common/locales/pt';
+import { HashLocationStrategy, LocationStrategy, registerLocaleData } from '@angular/common';
+import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
+import { ToastrModule, provideToastr } from 'ngx-toastr';
 
-import { ToastrModule } from 'ngx-toastr';
-import { IConfig, NgxMaskModule } from 'ngx-mask';
-import { PortifolioComponent } from './pages/portifolio/portifolio.component';
-import { NgxSpinnerModule } from "ngx-spinner";
+//pages
+import { HomeModule } from './pages/home/home.module';
+import { AboutModule } from './pages/about/about.module';
+import { ContactModule } from './pages/contact/contact.module';
+import { PortifolioModule } from './pages/portifolio/portifolio.module';
 
-const maskConfig: Partial<IConfig> = {};
-const toastrConfig = {timeOut: 1000,positionClass: 'toast-top-right', preventDuplicates: true }
+registerLocaleData(localePtBR);
+
+const maskConfig = {};
+const toastrConfig = { timeOut: 1000, positionClass: 'toast-top-right', preventDuplicates: true };
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    PortifolioComponent,
-    AboutComponent,
-    ContactComponent,
-    HomeComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    RouterModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    NgxSpinnerModule,
-    ToastrModule.forRoot(toastrConfig),
-    NgxMaskModule.forRoot(),
-  ],
-  providers: [
-    { provide: LOCALE_ID, useValue: 'pt-BR' },
-    { provide: LocationStrategy, useClass: HashLocationStrategy }
-  ],
+  declarations: [ AppComponent],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
     NO_ERRORS_SCHEMA
+  ],
+  imports: [
+    //main
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    //libs
+    ToastrModule.forRoot(toastrConfig),
+    NgxMaskDirective,
+    //componentsModule
+    LayoutModule,
+    HomeModule,
+    AboutModule,
+    ContactModule,
+    PortifolioModule,
+  ],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'pt-BR' },
+    { provide: LocationStrategy, useClass: HashLocationStrategy },
+    provideHttpClient(withInterceptorsFromDi()),
+    provideToastr(toastrConfig),
+    provideNgxMask(maskConfig),
+
   ],
   bootstrap: [AppComponent]
 })
