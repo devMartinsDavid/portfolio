@@ -1,171 +1,165 @@
 <section class="about">
 
-    <h1 class="heading"> Sobre <span>mim</span> </h1>
+  <h1 class="heading"> About <span>me</span> </h1>
 
-    <div class="row">
+  <div class="row">
 
-        <div class="info-container">
+    <div class="info-container">
 
-            <h1>Informações Pessoais</h1>
+      <h1>Personal Information</h1>
 
-            <div class="box-container">
+      <div class="box-container">
 
-                <div class="box">
-                    <h3> <span>Nome : </span> David Wallison Martins Lopes </h3>
-                    <h3> <span>Idade : </span> {{  getFormattedAge('birthday')  }} </h3>
-                    <h3 class="email"> <span>Email : </span> david_wallison&#64;hotmail.com </h3>
-                    <h3> <span>Endereço : </span> Goiânia/GO, Brasil </h3>
-                </div>
-
-                <div class="box">
-                    <h3> <span>Freelance/CLT : </span> Disponível </h3>
-                    <h3> <span>Skill : </span> front-end & back-end </h3>
-                    <h3> <span>Experiência : </span> {{ getFormattedAge('yearsProgramation') }} </h3>
-                    <h3> <span>Linguagem : </span> Português, Inglês </h3>
-                </div>
-
-            </div>
-
-            <!-- <a class="btn" href="assets/cv/curriculo_david_frontend.pdf" target="_blank" rel="noopener noreferrer">
-                download CV <i class="fas fa-download"></i> </a> -->
-
+        <div class="box">
+          <h3> <span>Name : </span> David Wallison Martins Lopes </h3>
+          <h3> <span>Age : </span> {{ getFormattedAge('birthday') }} </h3>
+          <h3 class="email"> <span>Email : </span> david_wallison&#64;hotmail.com </h3>
+          <h3> <span>Address : </span> Goiânia/GO, Brazil </h3>
         </div>
 
-        <div class="count-container">
-
-            <div class="box">
-                <h3>{{ yearsProgramation }}</h3>
-                <p>Anos de experiência</p>
-            </div>
-
-            <div class="box">
-                <h3>+7</h3>
-                <p>Projetos Concluídos</p>
-            </div>
-
+        <div class="box">
+          <h3> <span>Freelance/CLT : </span> Available </h3>
+          <h3> <span>Skills : </span> front-end & back-end </h3>
+          <h3> <span>Experience : </span> {{ getFormattedAge('yearsProgramation') }} </h3>
+          <h3> <span>Languages : </span> Portuguese, English </h3>
         </div>
+
+      </div>
 
     </div>
+
+    <div class="count-container">
+
+      <div class="box">
+        <h3>{{ yearsProgramation }}</h3>
+        <p>Years of Experience</p>
+      </div>
+
+      <div class="box">
+        <h3>+7</h3>
+        <p>Completed Projects</p>
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
 
 <section class="skills">
 
-    <h1 class="heading" style="margin-top: 50px;"> <span>Minhas</span> skills </h1>
+  <h1 class="heading" style="margin-top: 50px;"> <span>My</span> skills </h1>
 
-    <div class="box-container">
-        <div class="box">
-            <img src="assets/images/icon-1.png">
-            <h3>html</h3>
-        </div>
-        <div class="box">
-            <img src="assets/images/icon-2.png">
-            <h3>css</h3>
-        </div>
-        <div class="box">
-            <img src="assets/images/icon-3.png">
-            <h3>javascript</h3>
-        </div>
-        <div class="box">
-            <img src="assets/images/icon-php.svg">
-            <h3>PHP</h3>
-        </div>
-        <div class="box">
-            <img src="assets/images/icon-5.png">
-            <h3>jquery</h3>
-        </div>
-        <div class="box">
-            <img src="assets/images/icon-8.png">
-            <h3>Laravel</h3>
-        </div>
-        <div class="box">
-            <img src="assets/images/icon-angular.png">
-            <h3>Angular</h3>
-        </div>
-        <div class="box">
-            <img src="assets/images/icon-9.png">
-            <h3>TypeScript</h3>
-        </div>
-        <div class="box">
-            <img src="assets/images/icon-nodejs.png">
-            <h3>NodeJs</h3>
-        </div>
-        <div class="box">
-            <img src="assets/images/mysql.png">
-            <h3>MySQL</h3>
-        </div>
+  <div class="box-container">
+    <div class="box">
+      <img src="assets/images/icon-1.png">
+      <h3>html</h3>
     </div>
+    <div class="box">
+      <img src="assets/images/icon-2.png">
+      <h3>css</h3>
+    </div>
+    <div class="box">
+      <img src="assets/images/icon-3.png">
+      <h3>javascript</h3>
+    </div>
+    <div class="box">
+      <img src="assets/images/icon-php.svg">
+      <h3>PHP</h3>
+    </div>
+    <div class="box">
+      <img src="assets/images/icon-5.png">
+      <h3>jquery</h3>
+    </div>
+    <div class="box">
+      <img src="assets/images/icon-8.png">
+      <h3>Laravel</h3>
+    </div>
+    <div class="box">
+      <img src="assets/images/icon-angular.png">
+      <h3>Angular</h3>
+    </div>
+    <div class="box">
+      <img src="assets/images/icon-9.png">
+      <h3>TypeScript</h3>
+    </div>
+    <div class="box">
+      <img src="assets/images/icon-nodejs.png">
+      <h3>NodeJs</h3>
+    </div>
+    <div class="box">
+      <img src="assets/images/mysql.png">
+      <h3>MySQL</h3>
+    </div>
+  </div>
 
 </section>
 
 <section class="education">
 
-    <h1 class="heading" style="margin-top: 50px;"> <span>Meus</span> Estudos </h1>
+  <h1 class="heading" style="margin-top: 50px;"> <span>My</span> Studies </h1>
 
-    <div class="box-container">
+  <div class="box-container">
 
-        <div class="box">
-            <i class="fas fa-graduation-cap"></i>
-            <span>JavaScript</span>
-            <h3>Curso de JavaScript</h3>
-            <p>Conceitos, sintaxe e recursos avançados sobre JavaScript, uma linguagem de programação essencial para
-                desenvolvimento web.</p>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-graduation-cap"></i>
-            <span>TypeScript</span>
-            <h3>Curso de TypeScript</h3>
-            <p>Conceitos, sintaxe e recursos avançados sobre TypeScript, uma linguagem de programação tipada.</p>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-graduation-cap"></i>
-            <span>PHP</span>
-            <h3>Curso de PHP</h3>
-            <p>Conceitos, syntax, básicos sobre umas das linguagens mais usadas na web.</p>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-graduation-cap"></i>
-            <span>Ionic</span>
-            <h3>Curso mobile com Ionic</h3>
-            <p>Estudos básicos sobre o ecosistema do framework Ionic e partes do funcionamento mobile.</p>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-graduation-cap"></i>
-            <span>Angular</span>
-            <h3>Curso de Angular</h3>
-            <p>Estudos do básico ao avançado utilizando animações, conceito de componentização, testes unitários, com o
-                Angular framework mantido pela a google desde 14 de setembro de 2016, te permite um desenvolvimento
-                robusto, completo e de forma ágil.</p>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-graduation-cap"></i>
-            <Span>MySQL</Span>
-            <h3>Estudo sobre MySQL</h3>
-            <p>Conceitos, consultas SQL, gerenciamento de banco de dados usando MySQL, um sistema de gerenciamento de
-                banco de dados relacional.</p>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-graduation-cap"></i>
-            <span>Web Developer</span>
-            <h3>Curso completo de Front-end</h3>
-            <p>Esse estudo foi o meu ponto de partida no vasto campo da programação, mergulhando nos fundamentos com HTML5, CSS, JS e Angular,
-                compreendendo em detalhes o funcionamento de aplicações web.</p>
-        </div>
-
-        <div class="box">
-            <!-- só pra fechar a linha da interface -->
-        </div>
-
-        <!-- <div class="box"> -->
-            <!-- só pra fechar a linha da interface -->
-        <!-- </div> -->
-
+    <div class="box">
+      <i class="fas fa-graduation-cap"></i>
+      <span>Analysis and Systems Development</span>
+      <h3>Currently pursuing Technologist Course</h3>
+      <p>This is my ongoing degree, where I am learning the fundamentals of system analysis and development, combining
+        theory with hands-on practice to design, build, and optimize software solutions.</p>
     </div>
+
+    <div class="box">
+      <i class="fas fa-graduation-cap"></i>
+      <span>JavaScript</span>
+      <h3>JavaScript Course</h3>
+      <p>Concepts, syntax, and advanced features of JavaScript, an essential programming language for web development.
+      </p>
+    </div>
+
+    <div class="box">
+      <i class="fas fa-graduation-cap"></i>
+      <span>TypeScript</span>
+      <h3>TypeScript Course</h3>
+      <p>Concepts, syntax, and advanced features of TypeScript, a typed programming language.</p>
+    </div>
+
+    <div class="box">
+      <i class="fas fa-graduation-cap"></i>
+      <span>PHP</span>
+      <h3>PHP Course</h3>
+      <p>Concepts, syntax, and basics of one of the most widely used languages on the web.</p>
+    </div>
+
+    <div class="box">
+      <i class="fas fa-graduation-cap"></i>
+      <span>Ionic</span>
+      <h3>Mobile Course with Ionic</h3>
+      <p>Basic studies on the Ionic framework ecosystem and mobile functionality.</p>
+    </div>
+
+    <div class="box">
+      <i class="fas fa-graduation-cap"></i>
+      <span>Angular</span>
+      <h3>Angular Course</h3>
+      <p>From basics to advanced studies using animations, componentization, unit testing, with the Angular framework
+        maintained by Google since 2016. It enables robust, scalable, and efficient web development.</p>
+    </div>
+
+    <div class="box">
+      <i class="fas fa-graduation-cap"></i>
+      <Span>MySQL</Span>
+      <h3>MySQL Study</h3>
+      <p>Concepts, SQL queries, database management using MySQL, a relational database management system.</p>
+    </div>
+
+    <div class="box">
+      <i class="fas fa-graduation-cap"></i>
+      <span>Web Developer</span>
+      <h3>Complete Front-end Course</h3>
+      <p>This study was my starting point in the vast field of programming, diving into the fundamentals with HTML5, CSS, JS, and Angular, understanding in detail how web applications work.</p>
+    </div>
+
+  </div>
 
 </section>

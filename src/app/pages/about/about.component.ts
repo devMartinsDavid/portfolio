@@ -40,7 +40,7 @@ export class AboutComponent implements OnInit {
     return age;
   }
 
-  formatAge(age: number): string { return age === 1 ? age + ' ano' : age + ' anos'; }
+  formatAge(age: number): string { return age === 1 ? age + ' year' : age + ' years'; }
 
   getFormattedAge(type: string): string { return type === 'birthday' ? this.formatAge(this.birthday) : this.formatAge(this.yearsProgramation); }
 

@@ -59,18 +59,18 @@ p{
 }
 
 /* animations class */
-.container-geral-palavras{
+.main-words-container{
   text-align: center;
 }
-#container-palavras{
+#words-container{
   display: flex;
   justify-content: center;
 }
-.container-geral-palavras #container-palavras > span{
+.main-words-container #words-container > span{
   margin-left: 5px;
   color: white;
 }
-.subtitle-geral{
+.main-subheading{
   display: flex;
   justify-content: center;
 }
