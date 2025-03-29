@@ -120,17 +120,17 @@ p{
 
 /* Classes used on [ngClass] */
 .slide-animation-right {
-  animation: slideFromRight 1.5s ease forwards;
+  animation: slideFromRight 2s ease forwards;
 }
 
 .slide-animation-top {
-  animation: slideFromTop 1.5s ease forwards;
+  animation: slideFromTop 2s ease forwards;
 }
 
 .slide-animation-left {
-  animation: slideFromLeft 1.5s ease forwards;
+  animation: slideFromLeft 2s ease forwards;
 }
 
 .fade-in {
-  animation: fadeIn 2s ease forwards;
+  animation: fadeIn 3s ease forwards;
 }

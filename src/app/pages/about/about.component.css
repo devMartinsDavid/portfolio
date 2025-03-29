@@ -178,3 +178,8 @@
   color: #aaa;
   line-height: 2;
 }
+
+/* Responsive Design */
+.box-large-screen {
+  border:none !important;
+}

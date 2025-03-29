@@ -157,7 +157,14 @@
       <i class="fas fa-graduation-cap"></i>
       <span>Web Developer</span>
       <h3>Complete Front-end Course</h3>
-      <p>This study was my starting point in the vast field of programming, diving into the fundamentals with HTML5, CSS, JS, and Angular, understanding in detail how web applications work.</p>
+      <p>This study was my starting point in the vast field of programming, diving into the fundamentals with HTML5,
+        CSS, JS, and Angular, understanding in detail how web applications work.</p>
+    </div>
+
+    <div *ngIf="isLargeScreen" [ngClass]="{
+         'box': true,
+         'box-large-screen': isLargeScreen
+      }">
     </div>
 
   </div>
