@@ -1,16 +1,20 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
+
+//main
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { LayoutModule } from './layout/layout.module';
+
+//libs
 import { CUSTOM_ELEMENTS_SCHEMA, LOCALE_ID, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
-// import { RouterModule } from '@angular/router';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import localePtBR from '@angular/common/locales/pt';
 import { HashLocationStrategy, LocationStrategy, registerLocaleData } from '@angular/common';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
 import { ToastrModule, provideToastr } from 'ngx-toastr';
-import { NgxSpinnerModule } from "ngx-spinner";
 
+//pages
 import { HomeModule } from './pages/home/home.module';
 import { AboutModule } from './pages/about/about.module';
 import { ContactModule } from './pages/contact/contact.module';
@@ -31,13 +35,12 @@ const toastrConfig = { timeOut: 1000, positionClass: 'toast-top-right', preventD
     //main
     BrowserModule,
     AppRoutingModule,
-    // RouterModule,
     BrowserAnimationsModule,
     //libs
-    NgxSpinnerModule,
     ToastrModule.forRoot(toastrConfig),
     NgxMaskDirective,
     //componentsModule
+    LayoutModule,
     HomeModule,
     AboutModule,
     ContactModule,
@@ -48,7 +51,8 @@ const toastrConfig = { timeOut: 1000, positionClass: 'toast-top-right', preventD
     { provide: LocationStrategy, useClass: HashLocationStrategy },
     provideHttpClient(withInterceptorsFromDi()),
     provideToastr(toastrConfig),
-    provideNgxMask(maskConfig)
+    provideNgxMask(maskConfig),
+
   ],
   bootstrap: [AppComponent]
 })

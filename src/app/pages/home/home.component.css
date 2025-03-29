@@ -118,7 +118,7 @@ p{
   }
 }
 
-/* Classes usadas no [ngClass] */
+/* Classes used on [ngClass] */
 .slide-animation-right {
   animation: slideFromRight 1.5s ease forwards;
 }

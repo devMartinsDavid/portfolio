@@ -20,7 +20,7 @@ export class AboutComponent implements OnInit {
 
   calculateYears(): void {
     const currentDate = new Date();
-    let birthDate = new Date('2000-06-20T17:00:00'); 
+    let birthDate = new Date('2000-06-20T17:00:00');
     let startProgramming = new Date('2022-08-08T06:00:00');
 
     this.birthday = this.calculateAge(birthDate, currentDate);
