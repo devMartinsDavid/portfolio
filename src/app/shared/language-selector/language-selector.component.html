@@ -1,13 +1,19 @@
-<div class="custom-dropdown language-selector">
+<div class="container-language-selector">
   <button (click)="toggleDropdown()" class="dropdown-button btn btn-secondary">
     <img [src]="currentFlag" alt="Current Language">
   </button>
   <ul *ngIf="dropdownOpen" class="dropdown-menu">
     <li (click)="changeLanguage('pt', 'assets/images/Brazil.png')">
-      <img src="assets/images/Brazil.png" alt="PT"> Portuguese
+      <div class="hover-select">
+        <p>{{ 'languageSelector.languagePT' | translate }}</p>
+        <img src="assets/images/Brazil.png" alt="PT">
+      </div>
     </li>
     <li (click)="changeLanguage('en', 'assets/images/eua.png')">
-      <img src="assets/images/eua.png" alt="EN"> English
+      <div class="hover-select">
+        <P>{{ 'languageSelector.languageEN' | translate }}</P>
+        <img src="assets/images/eua.png" alt="EN">
+      </div>
     </li>
   </ul>
 </div>

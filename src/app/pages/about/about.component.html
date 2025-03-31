@@ -128,4 +128,10 @@
     </div>
   </div>
 
+  <div *ngIf="isLargeScreen" [ngClass]="{
+    'box': true,
+    'box-large-screen': isLargeScreen
+  }">
+  </div>
+
 </section>

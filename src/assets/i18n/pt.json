@@ -1,4 +1,8 @@
 {
+  "languageSelector": {
+    "languagePT": "Português",
+    "languageEN":"Inglês"
+  },
   "HOME": "Home",
   "ABOUT": "Sobre mim",
   "CONTACT": "Contato",

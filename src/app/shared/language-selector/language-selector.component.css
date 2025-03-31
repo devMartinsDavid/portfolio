@@ -1,5 +1,4 @@
-.language-selector{
-  /* border: 1px solid chartreuse; */
+.container-language-selector{
   position: absolute;
   top: 0;
   right: 0;
@@ -34,4 +33,31 @@ button:hover {
 img {
   width: 50%;
   height: 20%;
+}
+
+.hover-select:hover{
+  background-color: #449eaf;
+  border-radius: 15%;
+}
+.hover-select > p {
+  text-align: center;
+}
+/* mobile */
+@media (max-width: 768px) {
+  button {
+    margin-right: 0;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-language-selector{
+    max-width: 13%;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
 }
