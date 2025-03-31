@@ -1,5 +1,6 @@
 import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-about',
@@ -12,7 +13,7 @@ export class AboutComponent implements OnInit, OnDestroy {
   birthday!: number;
   isLargeScreen: boolean  = false;
 
-  constructor(private title: Title, private cdRef: ChangeDetectorRef) { }
+  constructor(private title: Title, private cdRef: ChangeDetectorRef, private translate: TranslateService) { }
 
   ngOnInit(): void {
     this.title.setTitle('DevMartins | Sobre');
@@ -44,18 +45,12 @@ export class AboutComponent implements OnInit, OnDestroy {
     return age;
   }
 
-  formatAge(age: number): string { return age === 1 ? age + ' year' : age + ' years'; }
-
-  getFormattedAge(type: string): string { return type === 'birthday' ? this.formatAge(this.birthday) : this.formatAge(this.yearsProgramation); }
-
   checkScreenSize() {
     this.isLargeScreen = (window.innerWidth >= 1155 && window.innerWidth <= 1200) || window.innerWidth >= 1545;
     //force detection changes
     this.cdRef.detectChanges();
   }
 
-  ngOnDestroy() {
-    window.removeEventListener('resize', this.checkScreenSize.bind(this));
-  }
+  ngOnDestroy() { window.removeEventListener('resize', this.checkScreenSize.bind(this)); }
 
 }

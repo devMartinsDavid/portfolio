@@ -14,5 +14,52 @@
     "EVENING": "Uma noite encantadora!"
   },
   "SUBHEADING": "Desenvolvedor Web",
-  "DESCRIPTION": "Como alguém apaixonado por programação, dedico-me aos meus projetos com entusiasmo, encontrando alegria e satisfação na minha jornada como programador. Estou sempre trabalhando para melhorar minhas habilidades e buscar um crescimento profissional contínuo."
+  "DESCRIPTION": "Como alguém apaixonado por programação, dedico-me aos meus projetos com entusiasmo, encontrando alegria e satisfação na minha jornada como programador. Estou sempre trabalhando para melhorar minhas habilidades e buscar um crescimento profissional contínuo.",
+
+  "about": {
+    "title": "Sobre <span>mim</span>",
+    "personal_info": "Informações Pessoais",
+    "name": "Nome",
+    "age": "Idade",
+    "years": "anos",
+    "email": "E-mail",
+    "address": "Endereço",
+    "freelance_clt": "Freelance/CLT",
+    "available": "Disponível",
+    "skills": "Habilidades",
+    "experience": "Experiência",
+    "languages": "Idiomas",
+    "proficiency": "português, Inglês",
+    "years_experience": "Anos de Experiência",
+    "completed_projects": "Projetos Concluídos"
+  },
+  "skills": {
+    "title": "<span>Minhas</span> habilidades"
+  },
+  "education": {
+    "title": "<span>Meus</span> Estudos",
+    "course_analysis": {
+      "name": "Análise e Desenvolvimento de Sistemas",
+      "status": "Atualmente cursando Tecnólogo",
+      "description": "Este é meu curso atual, onde aprendo os fundamentos da análise e desenvolvimento de sistemas, combinando teoria e prática para projetar, construir e otimizar soluções de software."
+    },
+
+    "course_web_dev": {
+    "name": "Desenvolvedor Web Completo",
+    "title": "Curso Completo de Desenvolvimento Web",
+    "description": "Curso especializado que cobre desde os conceitos básicos até as técnicas mais avançadas de desenvolvimento web. Aprendi a trabalhar com JavaScript, PHP, TypeScript, HTML, CSS e MySQL, criando interfaces dinâmicas e interativas, implementando animações fluidas, estruturando projetos de forma modular e escalável, e garantindo a qualidade do código com testes automatizados. Este curso prepara você para construir aplicações web de alto desempenho."
+    },
+
+    "course_angular": {
+      "name": "Angular",
+      "title": "Curso de angularJS",
+      "description": "Dos fundamentos ao avançado, utilizando animações, componentização e testes de unidade com o framework Angular, mantido pelo Google desde 2016. Isso possibilita um desenvolvimento web robusto, escalável e eficiente."
+    },
+    "course_typescript": {
+      "name": "Typescript",
+      "title": "Curso de typescript",
+      "description": "Dos fundamentos ao uso avançado, o TypeScript aprimora o JavaScript com tipagem estática, interfaces e recursos modernos. Desenvolvido e mantido pela Microsoft, permite um desenvolvimento web escalável, livre de erros e de fácil manutenção, além de melhorar a colaboração entre equipes."
+    }
+
+  }
 }
