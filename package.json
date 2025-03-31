@@ -19,6 +19,8 @@
     "@angular/platform-browser": "~19.2.3",
     "@angular/platform-browser-dynamic": "~19.2.3",
     "@angular/router": "~19.2.3",
+    "@ngx-translate/core": "^16.0.4",
+    "@ngx-translate/http-loader": "^16.0.1",
     "ngx-mask": "^19.0.6",
     "ngx-spinner": "^19.0.0",
     "ngx-toastr": "^19.0.0",

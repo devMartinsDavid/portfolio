@@ -1,0 +1,18 @@
+{
+  "HOME": "Home",
+  "ABOUT": "About me",
+  "CONTACT": "Contact",
+  "PORTFOLIO": "Portfolio",
+  "LANGUAGE": "Language",
+  "GREETING_PART1": "Hello, ",
+  "GREETING_PART2": "I am ",
+  "GREETING_PART3": "David",
+  "GREETINGS": {
+    "EARLY_MORNING": "A Great Early Morning!",
+    "MORNING": "A Wonderful Morning!",
+    "AFTERNOON": "A Pleasant Afternoon!",
+    "EVENING": "A Lovely Evening!"
+  },
+  "SUBHEADING": "Web Developer",
+  "DESCRIPTION": "As someone passionate about programming, I dedicate myself to my projects with enthusiasm, finding joy and satisfaction in my journey as a programmer. I am always working to improve my skills and pursue continuous professional growth."
+}

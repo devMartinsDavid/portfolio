@@ -4,6 +4,7 @@ import { Title } from '@angular/platform-browser';
 import { ControllerBase } from '@app/controller/controller.base';
 import { AppService } from '@app/services/app.service';
 import { MessageService } from '@app/services/message.service';
+import { TranslateService } from '@ngx-translate/core';
 import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
@@ -20,9 +21,10 @@ export class ContactComponent extends ControllerBase implements OnInit {
     private titleService: Title,
     private appService: AppService,
     private messageService: MessageService,
+    private translateService: TranslateService,
     private spinner: NgxSpinnerService
   ) {
-    super();
+    super(translateService);
   }
 
   ngOnInit(): void { this.setTitle('DevMartins | Contato'); }

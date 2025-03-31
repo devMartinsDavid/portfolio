@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './layout.component';
 import { RouterModule } from '@angular/router';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { SharedModule } from '@app/shared/shared.module';
 
 @NgModule({
   declarations: [LayoutComponent],
@@ -10,6 +11,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     CommonModule,
     RouterModule,
     NgxSpinnerModule,
+    SharedModule
   ],
   exports: [LayoutComponent]
 })

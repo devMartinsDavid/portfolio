@@ -1,0 +1,18 @@
+{
+  "HOME": "Home",
+  "ABOUT": "Sobre mim",
+  "CONTACT": "Contato",
+  "PORTFOLIO": "Portfólio",
+  "LANGUAGE": "Idioma",
+  "GREETING_PART1": "Olá, ",
+  "GREETING_PART2": "Eu sou o ",
+  "GREETING_PART3": "David!",
+  "GREETINGS": {
+    "EARLY_MORNING": "Um ótimo começo de manhã!",
+    "MORNING": "Uma manhã maravilhosa!",
+    "AFTERNOON": "Uma tarde agradável!",
+    "EVENING": "Uma noite encantadora!"
+  },
+  "SUBHEADING": "Desenvolvedor Web",
+  "DESCRIPTION": "Como alguém apaixonado por programação, dedico-me aos meus projetos com entusiasmo, encontrando alegria e satisfação na minha jornada como programador. Estou sempre trabalhando para melhorar minhas habilidades e buscar um crescimento profissional contínuo."
+}

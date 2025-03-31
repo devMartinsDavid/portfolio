@@ -1,11 +1,12 @@
 import { OnInit, AfterContentInit, AfterViewInit, OnDestroy, OnChanges, Injectable } from '@angular/core';
 
 import { environment } from '@env/environment';
+import { TranslateService } from '@ngx-translate/core';
 
 @Injectable({providedIn: "root"})
 export class ControllerBase implements OnInit, AfterContentInit, AfterViewInit, OnDestroy, OnChanges {
 
-    constructor() {}
+    constructor(private translate: TranslateService) {}
 
     ngOnInit() {
     }
@@ -33,13 +34,13 @@ export class ControllerBase implements OnInit, AfterContentInit, AfterViewInit, 
         const hour: number = new Date().getHours();
 
         if (hour < 5) {
-          return "A Great Early Morning!";
+          return this.translate.instant('GREETINGS.EARLY_MORNING');
         } else if (hour < 12) {
-          return "A Wonderful Morning!";
+          return this.translate.instant('GREETINGS.MORNING');
         } else if (hour < 18) {
-          return "A Pleasant Afternoon!";
+          return this.translate.instant('GREETINGS.AFTERNOON');
         } else {
-          return "A Lovely Evening!";
+          return this.translate.instant('GREETINGS.EVENING');
         }
     }
 

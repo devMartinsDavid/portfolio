@@ -1,0 +1,37 @@
+.language-selector{
+  /* border: 1px solid chartreuse; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 5px;
+  color: aliceblue;
+}
+
+.dropdown-menu {
+  list-style: none;
+  cursor: pointer;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  color: aliceblue;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #449eaf;
+  color: #fff;
+}
+
+img {
+  width: 50%;
+  height: 20%;
+}

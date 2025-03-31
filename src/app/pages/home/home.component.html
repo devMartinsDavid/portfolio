@@ -2,27 +2,32 @@
   <div class="greeting">
     <h2 aria-live="polite">{{ greetingMessage }}</h2>
   </div>
-
   <div class="image">
     <img src="assets/images/user4.jpg" alt="My profile photo">
   </div>
 
   <div class="content">
     <div class="main-words-container">
-      <h3 id="words-container">
-        <span class="word-1" [ngClass]="{ 'slide-animation-right': animationPlayed }"> Hello, </span>
-        <span class="word-2" [ngClass]="{ 'slide-animation-top': animationPlayed }"> I am </span>
-        <span class="word-3" [ngClass]="{ 'slide-animation-left': animationPlayed }"> David! </span>
+      <h3 id="words-container" *ngIf="animationPlayed">
+        <span class="word-1" [ngClass]="{ 'slide-animation-right': animationPlayed }">
+          {{ 'GREETING_PART1' | translate }}
+        </span>
+        <span class="word-2" [ngClass]="{ 'slide-animation-top': animationPlayed }">
+          {{ 'GREETING_PART2' | translate }}
+        </span>
+        <span class="word-3" [ngClass]="{ 'slide-animation-left': animationPlayed }">
+          {{ 'GREETING_PART3' | translate }}
+        </span>
       </h3>
       <div class="main-subheading">
-        <span class="subheading word-4" [ngClass]="{ 'slide-animation-left': animationPlayed }"> Web Developer </span>
+        <span class="subheading word-4" [ngClass]="{ 'slide-animation-left': animationPlayed }"> {{ 'SUBHEADING' | translate }} </span>
       </div>
     </div>
 
-    <p>As someone passionate about programming, I dedicate myself to my projects with enthusiasm, finding joy and satisfaction in my journey as a programmer. I am always working to improve my skills and pursue continuous professional growth.</p>
+    <p>{{ 'DESCRIPTION' | translate }}</p>
 
     <a class="btn center" [routerLink]="['/about']">
-      ABOUT ME
+      {{ 'ABOUT' | translate }}
       <i class="fas fa-user"></i>
     </a>
   </div>

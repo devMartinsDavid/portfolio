@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@
 import { NavigationEnd, NavigationStart, Router, RouterOutlet } from '@angular/router';
 import { slideInLayoutAnimation } from '@app/animations';
 import { ControllerBase } from '@app/controller/controller.base';
+import { TranslateService } from '@ngx-translate/core';
 import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
@@ -15,8 +16,8 @@ import { NgxSpinnerService } from 'ngx-spinner';
 export class LayoutComponent extends ControllerBase implements OnInit {
   loading : boolean = false;
 
-  constructor(private router: Router, private spinner: NgxSpinnerService) {
-    super();
+  constructor(private router: Router, private spinner: NgxSpinnerService, private translateService: TranslateService) {
+    super(translateService);
   }
 
   ngOnInit() {

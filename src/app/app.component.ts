@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ControllerBase } from './controller/controller.base';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -10,5 +11,5 @@ import { ControllerBase } from './controller/controller.base';
 export class AppComponent extends ControllerBase {
 
   title: string = 'DevMartins';
-  constructor() { super(); }
+  constructor(private translateService: TranslateService) { super(translateService); }
 }
