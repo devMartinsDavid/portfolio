@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ContactRoutingModule } from './contact-routing.module';
 import { FormsModule } from '@angular/forms';
 import { ContactComponent } from './contact.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -13,7 +14,8 @@ import { ContactComponent } from './contact.component';
     //main
     CommonModule,
     ContactRoutingModule,
-    FormsModule
+    FormsModule,
+    TranslateModule
   ]
 })
 export class ContactModule { }

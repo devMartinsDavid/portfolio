@@ -1,27 +1,27 @@
 <section class="contact">
 
-  <h1 class="heading"> <span>C</span>o<span>n</span>t<span>a</span>c<span>t</span></h1>
+  <h2 class="heading" [innerHTML]="'contact.contactTitle' | translate"></h2>
 
   <div class="row">
 
       <div class="info-container">
 
-          <h1>Contact</h1>
+          <h1>{{ 'contact.contact' | translate }}</h1>
 
           <div class="box-container">
 
               <div class="box">
                   <i class="fas fa-map"></i>
                   <div class="info">
-                      <h3>Address:</h3>
-                      <p>Goiânia/GO - Brazil</p>
+                      <h3>{{ 'contact.address' | translate }}:</h3>
+                      <p>{{ 'contact.city' | translate }}</p>
                   </div>
               </div>
 
               <div class="box">
                   <i class="fas fa-envelope"></i>
                   <div class="info">
-                      <h3>Email:</h3>
+                      <h3>{{ 'contact.email' | translate }}:</h3>
                       <p class="email">david_wallison&#64;hotmail.com</p>
                   </div>
               </div>
@@ -29,7 +29,7 @@
               <div class="box">
                   <i class="fas fa-phone"></i>
                   <div class="info">
-                      <h3>WhatsApp / Mobile:</h3>
+                      <h3>{{ 'contact.whatsapp' | translate }} / {{ 'contact.mobile' | translate }}:</h3>
                       <p>+55 62 9 9120-6654</p>
                   </div>
               </div>
@@ -47,19 +47,19 @@
       <form #form="ngForm" (ngSubmit)="sendMail(form)" (keydown.enter)="sendMail(form)">
 
           <div class="inputBox">
-              <input type="text" placeholder="*Your name" name="name" ngModel required #name="ngModel">
-              <input type="tel" placeholder="Your number" name="telephone" ngModel #telephone="ngModel" mask="(00) 0 0000-0000">
+              <input type="text" placeholder="{{ 'contact.namePlaceholder' | translate }}" name="name" ngModel required #name="ngModel">
+              <input type="tel" placeholder="{{ 'contact.phonePlaceholder' | translate }}" name="telephone" ngModel #telephone="ngModel" mask="(00) 0 0000-0000">
           </div>
 
           <div class="inputBox">
-              <input type="email" placeholder="*Your email" name="_replyto" ngModel required #_replyto="ngModel">
-              <input type="text" placeholder="*Subject" name="_subject" ngModel required #_subject="ngModel">
+              <input type="email" placeholder="{{ 'contact.emailPlaceholder' | translate }}" name="_replyto" ngModel required #_replyto="ngModel">
+              <input type="text" placeholder="{{ 'contact.subjectPlaceholder' | translate }}" name="_subject" ngModel required #_subject="ngModel">
           </div>
 
-          <textarea name="complaint" placeholder="Message" cols="30" rows="10" ngModel required #complaint="ngModel"></textarea>
+          <textarea name="complaint" placeholder="{{ 'contact.messagePlaceholder' | translate }}" cols="30" rows="10" ngModel required #complaint="ngModel"></textarea>
 
           <button type="submit" class="btn">
-              Send Message
+              {{ 'contact.sendMessage' | translate }}
               <i class="fas fa-paper-plane"></i>
           </button>
 

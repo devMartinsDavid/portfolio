@@ -17,7 +17,7 @@
   "DESCRIPTION": "Como alguém apaixonado por programação, dedico-me aos meus projetos com entusiasmo, encontrando alegria e satisfação na minha jornada como programador. Estou sempre trabalhando para melhorar minhas habilidades e buscar um crescimento profissional contínuo.",
 
   "about": {
-    "title": "Sobre <span>mim</span>",
+    "aboutTitle": "Sobre <span>mim</span>",
     "personal_info": "Informações Pessoais",
     "name": "Nome",
     "age": "Idade",
@@ -62,7 +62,7 @@
     }
   },
   "portfolio": {
-    "title_page": "<span>Alguns</span> Projetos",
+    "portfolioTitle": "<span>Alguns</span> Projetos",
     "simple": "Projetos pessoais simples",
     "personalBudgetApp": "App de Orçamento Pessoal",
     "personalBudgetDesc": "Interface básica para controle de despesas.",
@@ -76,5 +76,20 @@
     "productRegDesc": "Demonstração de layout para cadastro de produto usando Angular.",
     "underMaintenance": "Em manutenção",
     "loadMore": "Carregar mais"
+  },
+  "contact": {
+    "contactTitle": "<span>Vamos</span> conversar!",
+    "contact": "Contato",
+    "address": "Endereço",
+    "city": "Goiânia/GO - Brasil",
+    "email": "E-mail",
+    "whatsapp": "WhatsApp",
+    "mobile": "Celular",
+    "namePlaceholder": "*Seu nome",
+    "phonePlaceholder": "Seu número",
+    "emailPlaceholder": "*Seu e-mail",
+    "subjectPlaceholder": "*Assunto",
+    "messagePlaceholder": "Mensagem",
+    "sendMessage": "Enviar mensagem"
   }
 }

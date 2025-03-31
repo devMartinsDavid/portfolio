@@ -17,7 +17,7 @@
   "DESCRIPTION": "As someone passionate about programming, I dedicate myself to my projects with enthusiasm, finding joy and satisfaction in my journey as a programmer. I am always working to improve my skills and pursue continuous professional growth.",
 
   "about": {
-    "title": "About <span>me</span>",
+    "aboutTitle": "About <span>me</span>",
     "personal_info": "Personal Information",
     "name": "Name",
     "age": "Age",
@@ -59,7 +59,7 @@
     }
   },
   "portfolio": {
-    "title_page": "<span>Some</span> Projects",
+    "portfolioTitle": "<span>Some</span> Projects",
     "simple": "Simple Personal Projects",
     "personalBudgetApp": "Personal Budget App",
     "personalBudgetDesc": "Basic expense tracking interface.",
@@ -73,6 +73,21 @@
     "productRegDesc": "Demonstration of a layout for product registration using Angular.",
     "underMaintenance": "Under Maintenance",
     "loadMore": "Load more"
+  },
+  "contact": {
+    "contactTitle": "<span>Let's</span> talk!",
+    "contact": "Contact",
+    "address": "Address",
+    "city": "Goiânia/GO - Brasil",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "mobile": "Mobile",
+    "namePlaceholder": "*Your name",
+    "phonePlaceholder": "Your number",
+    "emailPlaceholder": "*Your email",
+    "subjectPlaceholder": "*Subject",
+    "messagePlaceholder": "Message",
+    "sendMessage": "Send message"
   }
 
 
