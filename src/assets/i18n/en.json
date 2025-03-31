@@ -57,6 +57,22 @@
       "title": "Typescript course",
       "description": "From fundamentals to advanced usage, TypeScript enhances JavaScript with static typing, interfaces, and modern features. Developed and maintained by Microsoft, it allows for scalable, error-resistant, and maintainable web development while improving collaboration across teams."
     }
+  },
+  "portfolio": {
+    "title_page": "<span>Some</span> Projects",
+    "simple": "Simple Personal Projects",
+    "personalBudgetApp": "Personal Budget App",
+    "personalBudgetDesc": "Basic expense tracking interface.",
+    "technologies": "Technologies",
+    "viewProject": "View project",
+    "testGame": "Test Game",
+    "testGameDesc": "Responsive design implementation and UI/UX concepts for intuitive interaction on any screen size.",
+    "bodyMassCalculator": "Body Mass Calculator",
+    "bodyMassDesc": "Design experiments using GSAP, CSS, and SVG. Simple logic implementation with JavaScript.",
+    "productRegistration": "Product Registration",
+    "productRegDesc": "Demonstration of a layout for product registration using Angular.",
+    "underMaintenance": "Under Maintenance",
+    "loadMore": "Load more"
   }
 
 

@@ -60,6 +60,21 @@
       "title": "Curso de typescript",
       "description": "Dos fundamentos ao uso avançado, o TypeScript aprimora o JavaScript com tipagem estática, interfaces e recursos modernos. Desenvolvido e mantido pela Microsoft, permite um desenvolvimento web escalável, livre de erros e de fácil manutenção, além de melhorar a colaboração entre equipes."
     }
-
+  },
+  "portfolio": {
+    "title_page": "<span>Alguns</span> Projetos",
+    "simple": "Projetos pessoais simples",
+    "personalBudgetApp": "App de Orçamento Pessoal",
+    "personalBudgetDesc": "Interface básica para controle de despesas.",
+    "technologies": "Tecnologias",
+    "viewProject": "Ver projeto",
+    "testGame": "Jogo de Teste",
+    "testGameDesc": "Implementação de design responsivo e conceitos de UI/UX para interação intuitiva em qualquer tamanho de tela.",
+    "bodyMassCalculator": "Calculadora de Massa Corporal",
+    "bodyMassDesc": "Experimentos de design usando GSAP, CSS e SVG. Lógica simples implementada com JavaScript.",
+    "productRegistration": "Cadastro de Produto",
+    "productRegDesc": "Demonstração de layout para cadastro de produto usando Angular.",
+    "underMaintenance": "Em manutenção",
+    "loadMore": "Carregar mais"
   }
 }

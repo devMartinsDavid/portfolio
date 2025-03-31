@@ -1,68 +1,64 @@
 <section class="portfolio">
 
-  <h1 class="heading" style="margin-bottom: -10px;"> <span>Some</span> Projects </h1>
-  <p class="text" style="font-size: 2rem;color: #aaa;line-height: 2;margin-bottom: 20px;">Simple Personal Projects</p>
+  <h1 class="heading" style="margin-bottom: -10px;" [innerHTML]="'portfolio.title_page' | translate"></h1>
+  <p class="text" style="font-size: 2rem;color: #aaa;line-height: 2;margin-bottom: 20px;">{{ 'portfolio.simple' | translate }}</p>
   <div class="box-container">
       <div class="box">
           <img src="assets/images/img-1.jpg" alt="">
           <div class="content">
-              <h3>Personal Budget App</h3>
-              <p>Basic expense tracking interface.</p>
-              <p>Technologies: Angular, Bootstrap, CSS.</p>
-              <a href="https://devmartinsdavid.github.io/personal-budget/" target="_blank"
-                  rel="noopener noreferrer">View project</a>
+              <h3>{{ 'portfolio.personalBudgetApp' | translate }}</h3>
+              <p>{{ 'portfolio.personalBudgetDesc' | translate }}</p>
+              <p>{{ 'portfolio.technologies' | translate }}: Angular, Bootstrap, CSS.</p>
+              <a href="https://devmartinsdavid.github.io/personal-budget/" target="_blank" rel="noopener noreferrer">{{ 'portfolio.viewProject' | translate }}</a>
           </div>
       </div>
 
       <div class="box">
           <img src="assets/images/img-3.jpg" alt="">
           <div class="content">
-              <h3>Test Game</h3>
-              <p>Responsive design implementation and UI/UX concepts for intuitive interaction on any screen size.</p>
-              <p>Technologies: JavaScript and CSS.</p>
-              <a href="https://devmartinsdavid.github.io/jogo-do-mosquito/" target="_blank"
-                  rel="noopener noreferrer">View project</a>
+              <h3>{{ 'portfolio.testGame' | translate }}</h3>
+              <p>{{ 'portfolio.testGameDesc' | translate }}</p>
+              <p>{{ 'portfolio.technologies' | translate }}: JavaScript and CSS.</p>
+              <a href="https://devmartinsdavid.github.io/jogo-do-mosquito/" target="_blank" rel="noopener noreferrer">{{ 'portfolio.viewProject' | translate }}</a>
           </div>
       </div>
 
       <div class="box">
           <img src="assets/images/img-4.jpg" alt="">
           <div class="content">
-              <h3>Body Mass Calculator</h3>
-              <p>Design experiments using GSAP, CSS, and SVG. Simple logic implementation with JavaScript.</p>
-              <p>Technologies used: JavaScript, GSAP, and CSS</p>
-              <a href="https://devmartinsdavid.github.io/calculo-massa-corporal/" target="_blank"
-                  rel="noopener noreferrer">View Project</a>
+              <h3>{{ 'portfolio.bodyMassCalculator' | translate }}</h3>
+              <p>{{ 'portfolio.bodyMassDesc' | translate }}</p>
+              <p>{{ 'portfolio.technologies' | translate }}: JavaScript, GSAP, and CSS.</p>
+              <a href="https://devmartinsdavid.github.io/calculo-massa-corporal/" target="_blank" rel="noopener noreferrer">{{ 'portfolio.viewProject' | translate }}</a>
           </div>
       </div>
 
       <div class="box">
           <img src="assets/images/img-2.jpg" alt="">
           <div class="content">
-              <h3>Product Registration</h3>
-              <p>Demonstration of a layout for product registration using Angular.</p>
-              <p>Technologies: Angular, CSS.</p>
-              <a href="https://devmartinsdavid.github.io/Estudos-Angular/" target="_blank"
-                  rel="noopener noreferrer">View project</a>
+              <h3>{{ 'portfolio.productRegistration' | translate }}</h3>
+              <p>{{ 'portfolio.productRegDesc' | translate }}</p>
+              <p>{{ 'portfolio.technologies' | translate }}: Angular, CSS.</p>
+              <a href="https://devmartinsdavid.github.io/Estudos-Angular/" target="_blank" rel="noopener noreferrer">{{ 'portfolio.viewProject' | translate }}</a>
           </div>
       </div>
 
       <div class="box">
           <img src="assets/images/img-5.jpg" alt="">
           <div class="content">
-              <h3>Under Maintenance</h3>
+              <h3>{{ 'portfolio.underMaintenance' | translate }}</h3>
           </div>
       </div>
 
       <div class="box">
           <img src="assets/images/img-6.jpg" alt="">
           <div class="content">
-              <h3>Under Maintenance</h3>
+              <h3>{{ 'portfolio.underMaintenance' | translate }}</h3>
           </div>
       </div>
 
   </div>
 
-  <a href="#" class="btn"> load more <i class="fas fa-redo"></i> </a>
+  <a href="#" class="btn">{{ 'portfolio.loadMore' | translate }} <i class="fas fa-redo"></i> </a>
 
 </section>
