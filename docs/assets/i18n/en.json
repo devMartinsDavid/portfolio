@@ -1,0 +1,99 @@
+{
+  "languageSelector": {
+    "languagePT": "portuguese",
+    "languageEN":"English"
+  },
+  "HOME": "Home",
+  "ABOUT": "About me",
+  "CONTACT": "Contact",
+  "PORTFOLIO": "Portfolio",
+  "LANGUAGE": "Language",
+  "GREETING_PART1": "Hello, ",
+  "GREETING_PART2": "I am ",
+  "GREETING_PART3": "David",
+  "GREETINGS": {
+    "EARLY_MORNING": "A Great Early Morning!",
+    "MORNING": "A Wonderful Morning!",
+    "AFTERNOON": "A Pleasant Afternoon!",
+    "EVENING": "A Lovely Evening!"
+  },
+  "SUBHEADING": "Web Developer",
+  "DESCRIPTION": "As someone passionate about programming, I dedicate myself to my projects with enthusiasm, finding joy and satisfaction in my journey as a programmer. I am always working to improve my skills and pursue continuous professional growth.",
+
+  "about": {
+    "aboutTitle": "About <span>me</span>",
+    "personal_info": "Personal Information",
+    "name": "Name",
+    "age": "Age",
+    "years": "years",
+    "email": "Email",
+    "address": "Address",
+    "freelance_clt": "Freelance/CLT",
+    "available": "Available",
+    "skills": "Skills",
+    "experience": "Experience",
+    "languages": "Languages",
+    "years_experience": "Years of experience",
+    "completed_projects": "Completed projects"
+  },
+  "skills": {
+    "title": "<span>My</span> skills"
+  },
+  "education": {
+    "title": "<span>My</span> Studies",
+    "course_analysis": {
+      "name": "Analysis and Systems Development",
+      "status": "Currently pursuing a Technologist degree",
+      "description": "This is my current course, where I learn the fundamentals of systems analysis and development, combining theory and practice to design, build, and optimize software solutions."
+    },
+    "course_web_dev": {
+      "name": "Web Developer",
+      "title": "Complete Front-end Course",
+      "description": "Specialized course covering everything from basic concepts to the most advanced web development techniques. I learned to work with JavaScript, PHP, TypeScript, HTML, CSS, and MySQL, creating dynamic and interactive interfaces, implementing smooth animations, structuring projects in a modular and scalable manner, and ensuring code quality with automated testing. This course prepares you to build high-performance web applications."
+    },
+    "course_angular": {
+      "name": "Angular",
+      "title": "Angular Course",
+      "description": "From basics to advanced, using animations, componentization, and unit tests with the Angular framework maintained by Google since 2016. It enables robust, scalable, and efficient web development."
+    },
+    "course_typescript": {
+      "name": "Typescript",
+      "title": "Typescript course",
+      "description": "From fundamentals to advanced usage, TypeScript enhances JavaScript with static typing, interfaces, and modern features. Developed and maintained by Microsoft, it allows for scalable, error-resistant, and maintainable web development while improving collaboration across teams."
+    }
+  },
+  "portfolio": {
+    "portfolioTitle": "<span>Some</span> Projects",
+    "simple": "Simple Personal Projects",
+    "personalBudgetApp": "Personal Budget App",
+    "personalBudgetDesc": "Basic expense tracking interface.",
+    "technologies": "Technologies",
+    "viewProject": "View project",
+    "testGame": "Test Game",
+    "testGameDesc": "Responsive design implementation and UI/UX concepts for intuitive interaction on any screen size.",
+    "bodyMassCalculator": "Body Mass Calculator",
+    "bodyMassDesc": "Design experiments using GSAP, CSS, and SVG. Simple logic implementation with JavaScript.",
+    "productRegistration": "Product Registration",
+    "productRegDesc": "Demonstration of a layout for product registration using Angular.",
+    "underMaintenance": "Under Maintenance",
+    "loadMore": "Load more"
+  },
+  "contact": {
+    "contactTitle": "<span>Let's</span> talk!",
+    "contact": "Contact",
+    "address": "Address",
+    "city": "Goiânia/GO - Brasil",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "mobile": "Mobile",
+    "namePlaceholder": "*Your name",
+    "phonePlaceholder": "Your number",
+    "emailPlaceholder": "*Your email",
+    "subjectPlaceholder": "*Subject",
+    "messagePlaceholder": "Message",
+    "sendMessage": "Send message"
+  }
+
+
+
+}

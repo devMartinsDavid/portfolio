@@ -7,6 +7,7 @@
 }
 
 .dropdown-menu {
+  text-align: center;
   list-style: none;
   cursor: pointer;
 }
