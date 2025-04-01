@@ -142,7 +142,7 @@ p{
     gap: 0.5rem;
   }
   .home .image img {
-    height: 40rem; /* Tamanho menor no mobile */
-    width: 40rem;  /* Tamanho menor no mobile */
+    height: 40rem;
+    width: 40rem;
   }
 }

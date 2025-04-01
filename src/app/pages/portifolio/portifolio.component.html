@@ -1,64 +1,24 @@
 <section class="portfolio">
-
   <h1 class="heading" style="margin-bottom: -10px;" [innerHTML]="'portfolio.portfolioTitle' | translate"></h1>
-  <p class="text" style="font-size: 2rem;color: #aaa;line-height: 2;margin-bottom: 20px;">{{ 'portfolio.simple' | translate }}</p>
+  <p class="text" style="font-size: 2rem;color: #aaa;line-height: 2;margin-bottom: 20px;">
+    {{ 'portfolio.simple' | translate }}
+  </p>
+
   <div class="box-container">
-      <div class="box">
-          <img src="assets/images/img-1.jpg" alt="">
-          <div class="content">
-              <h3>{{ 'portfolio.personalBudgetApp' | translate }}</h3>
-              <p>{{ 'portfolio.personalBudgetDesc' | translate }}</p>
-              <p>{{ 'portfolio.technologies' | translate }}: Angular, Bootstrap, CSS.</p>
-              <a href="https://devmartinsdavid.github.io/personal-budget/" target="_blank" rel="noopener noreferrer">{{ 'portfolio.viewProject' | translate }}</a>
-          </div>
+    <div class="box" *ngFor="let project of projects.slice(0, visibleProjects)">
+      <img [src]="project.img" alt="">
+      <div class="content">
+        <h3>{{ project.title | translate }}</h3>
+        <p *ngIf="project.desc">{{ project.desc | translate }}</p>
+        <p *ngIf="project.tech">{{ 'portfolio.technologies' | translate }}: {{ project.tech }}</p>
+        <a *ngIf="project.link" [href]="project.link" target="_blank" rel="noopener noreferrer">
+          {{ 'portfolio.viewProject' | translate }}
+        </a>
       </div>
-
-      <div class="box">
-          <img src="assets/images/img-3.jpg" alt="">
-          <div class="content">
-              <h3>{{ 'portfolio.testGame' | translate }}</h3>
-              <p>{{ 'portfolio.testGameDesc' | translate }}</p>
-              <p>{{ 'portfolio.technologies' | translate }}: JavaScript and CSS.</p>
-              <a href="https://devmartinsdavid.github.io/jogo-do-mosquito/" target="_blank" rel="noopener noreferrer">{{ 'portfolio.viewProject' | translate }}</a>
-          </div>
-      </div>
-
-      <div class="box">
-          <img src="assets/images/img-4.jpg" alt="">
-          <div class="content">
-              <h3>{{ 'portfolio.bodyMassCalculator' | translate }}</h3>
-              <p>{{ 'portfolio.bodyMassDesc' | translate }}</p>
-              <p>{{ 'portfolio.technologies' | translate }}: JavaScript, GSAP, and CSS.</p>
-              <a href="https://devmartinsdavid.github.io/calculo-massa-corporal/" target="_blank" rel="noopener noreferrer">{{ 'portfolio.viewProject' | translate }}</a>
-          </div>
-      </div>
-
-      <div class="box">
-          <img src="assets/images/img-2.jpg" alt="">
-          <div class="content">
-              <h3>{{ 'portfolio.productRegistration' | translate }}</h3>
-              <p>{{ 'portfolio.productRegDesc' | translate }}</p>
-              <p>{{ 'portfolio.technologies' | translate }}: Angular, CSS.</p>
-              <a href="https://devmartinsdavid.github.io/Estudos-Angular/" target="_blank" rel="noopener noreferrer">{{ 'portfolio.viewProject' | translate }}</a>
-          </div>
-      </div>
-
-      <div class="box">
-          <img src="assets/images/img-5.jpg" alt="">
-          <div class="content">
-              <h3>{{ 'portfolio.underMaintenance' | translate }}</h3>
-          </div>
-      </div>
-
-      <div class="box">
-          <img src="assets/images/img-6.jpg" alt="">
-          <div class="content">
-              <h3>{{ 'portfolio.underMaintenance' | translate }}</h3>
-          </div>
-      </div>
-
+    </div>
   </div>
 
-  <!-- <a href="#" class="btn">{{ 'portfolio.loadMore' | translate }} <i class="fas fa-redo"></i> </a> -->
-
+  <button *ngIf="visibleProjects < projects.length" class="btn" (click)="loadMore()">
+    {{ 'portfolio.loadMore' | translate }} <i class="fas fa-redo"></i>
+  </button>
 </section>

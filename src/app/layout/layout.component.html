@@ -7,15 +7,15 @@
     </a>
     <a [routerLink]="['/about']" routerLinkActive="link-active" [routerLinkActiveOptions]="{exact: true}" >
       <i class="fas fa-user"></i>
-      <span>About</span>
+      <span> {{ 'ABOUT' | translate }} </span>
     </a>
     <a [routerLink]="['/portfolio']" routerLinkActive="link-active" [routerLinkActiveOptions]="{exact: true}" >
       <i class="fas fa-briefcase"></i>
-      <span>Portfolio</span>
+      <span> {{ 'PORTFOLIO' | translate }} </span>
     </a>
     <a [routerLink]="['/contact']" routerLinkActive="link-active" [routerLinkActiveOptions]="{exact: true}" >
       <i class="fas fa-address-book"></i>
-      <span>Contact</span>
+      <span> {{ 'CONTACT' | translate }} </span>
     </a>
   </nav>
   <app-language-selector></app-language-selector>
